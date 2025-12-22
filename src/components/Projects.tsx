@@ -25,64 +25,44 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Onez",
+      title: "Onez(Group)",
       description: "A full-stack e-commerce solution with payment integration and admin dashboard.",
       tags: ["Java", "Html", "JS", "JEE"],
       image: "🛒",
+      github: "https://github.com/Madancsta/onez",
+      live: "https://onezdeploy-production.up.railway.app",
     },
     {
       title: "Vendor Management System",
       description: "Collaborative task manager with real-time updates and team features.",
       tags: ["Python", "Java Script", "MariaDB"],
       image: "✅",
+      github: "https://github.com/Madancsta/vendorManager",
+      live: "#",
     },
     {
-      title: "Printech",
+      title: "Printech(Group)",
       description: "SaaS platform helping customers buy printers",
       tags: ["Html", "CSS", "JS"],
       image: "🎨",
+      github: "https://github.com/Madancsta/printech",
+      live: "https://madancsta.github.io/Printech/",
     },
     {
-      title: "Kwality Banquet",
+      title: "Banquet Webpage",
       description: "A platform to book banquet halls with user reviews and ratings.",
       tags: ["Html", "CSS", "JS"],
       image: "🌤️",
+      github: "https://github.com/Madancsta/Banquet-webpage.",
+      live: "https://madancsta.github.io/Banquet-webpage./",
     },
     {
       title: "Quiz app",
       description: "Interactive quiz application with multiple categories and score tracking.",
       tags: ["React", "Node.js", "MongoDB"],
       image: "📊",
-    },
-    {
-      title: "Fitness Tracker",
-      description: "Mobile-first fitness app with workout plans and progress tracking.",
-      tags: ["React Native", "Redux", "Express"],
-      image: "💪",
-    },
-    {
-      title: "Recipe Sharing Platform",
-      description: "Community platform for sharing and discovering recipes worldwide.",
-      tags: ["Angular", "GraphQL", "PostgreSQL"],
-      image: "🍳",
-    },
-    {
-      title: "Real Estate Marketplace",
-      description: "Property listing platform with virtual tours and advanced search.",
-      tags: ["React", "Node.js", "Maps API"],
-      image: "🏠",
-    },
-    {
-      title: "Learning Management System",
-      description: "Online education platform with courses, quizzes, and certifications.",
-      tags: ["Django", "React", "Docker"],
-      image: "📚",
-    },
-    {
-      title: "Music Streaming App",
-      description: "Spotify-like music player with playlists and recommendations.",
-      tags: ["Svelte", "WebAudio", "Firebase"],
-      image: "🎵",
+      github: "https://github.com/Madancsta/quiz_site",
+      live: "#",
     },
   ];
 
@@ -138,11 +118,20 @@ const Projects = () => {
                   <div className="flex gap-2">
                     <Button size="sm" variant="outline" className="flex-1 border-border hover:bg-primary/10">
                       <Github className="h-4 w-4 mr-2" />
-                      <a href="https://github.com/Madancsta?tab=repositories">Code</a> 
+                       <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >Code</a> 
                     </Button>
                     <Button size="sm" className="flex-1 bg-primary hover:bg-primary/90">
-                      <ExternalLink className="h-4 w-4 mr-2" />
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                       Live
+                      </a>
                     </Button>
                   </div>
                 </div>

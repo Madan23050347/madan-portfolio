@@ -48,14 +48,6 @@ const Contact = () => {
 
             <div className="text-center p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-glow">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Phone className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="font-semibold mb-2">Phone</h3>
-              <p className="text-sm text-muted-foreground">9741803885</p>
-            </div>
-
-            <div className="text-center p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-glow">
-              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MapPin className="h-6 w-6 text-primary" />
               </div>
               <h3 className="font-semibold mb-2">Location</h3>
